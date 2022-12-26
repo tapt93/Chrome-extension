@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Profile",
+  "version": "1.0",
+  "description": "Extension for Oryve",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "/target.png",
+      "24": "/target.png",
+      "48": "/target.png",
+      "96": "/target.png"
+    }
+  },
+  "icons": {
+		"16": "/target.png",
+		"24": "/target.png",
+		"48": "/target.png",
+		"96": "/target.png"
+	},
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "permissions": [
+    "scripting",
+    "tabs",
+    "alarms",
+    "activeTab",
+    "declarativeContent",
+    "storage"
+  ]
+}
